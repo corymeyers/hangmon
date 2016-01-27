@@ -10,9 +10,15 @@
 //   });
 // });
 
-describe('randomPuzzle', function(){
-  it("will take an array of words and return a random selection", function(){
-    var testRandomPuzzle = new randomPuzzle(["cat", "dog", "mouse"]);
-    expect(testRandomPuzzle).to.equal("cat" || "dog" || "mouse");
+// describe('randomPuzzle', function(){
+//   it("will take an array of words and return a random selection", function(){
+//     var testRandomPuzzle = new randomPuzzle(["cat", "dog", "mouse"]);
+//     expect(testRandomPuzzle.wordbank).to.eql(["cat", "dog", "mouse"]);
+//   });
+// });
+
+describe('replaceLetters', function(){
+  it('finds all letters in a word and replaces them with underscore', function(){
+    expect(replaceLetters("banana").to.equal("_ _ _ _ _ _"))
   });
 });
