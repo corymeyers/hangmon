@@ -18,10 +18,14 @@ describe('wordSelector', function(){
 
   describe("wordSplitter", function(){
     it('takes the random word from wordSelector and splits it up into an array of one letter strings', function(){
-      expect(wordSplitter("marble")).to.equal(["m", "a", "r", "b", "l", "e"])
-    })
+      expect(wordSplitter("marble")).to.eql(["m", "a", "r", "b", "l", "e"]);
+    });
   });
-
+  describe("guessLetter", function(){
+    it("takes input from user and tests it against the array from wordSplitter", function(){
+      expect(guessLetter("l")).to.equal(false);
+    });
+  });
   describe('replaceLetters', function(){
     it('finds all letters in a word and replaces them with underscore', function(){
       expect(replaceLetters("banana")).to.equal("_ _ _ _ _ _ ");

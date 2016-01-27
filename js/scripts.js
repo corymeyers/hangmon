@@ -15,6 +15,10 @@ function Player(guess, lost, won){
   this.lost = lost
   this.won = won
 }
+var wordSplitter = function(str){
+var letterArray = str.split("");
+return letterArray;
+}
 
 var wordSelector = function(){
 var wordBank = ["marble", "minute", "beard", "courage", "rebel"]
