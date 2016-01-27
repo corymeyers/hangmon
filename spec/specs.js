@@ -19,6 +19,6 @@
 
 describe('replaceLetters', function(){
   it('finds all letters in a word and replaces them with underscore', function(){
-    expect(replaceLetters("banana").to.equal("_ _ _ _ _ _"))
+    expect(replaceLetters("banana")).to.equal("_ _ _ _ _ _ ")
   });
 });
