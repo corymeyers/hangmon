@@ -2,18 +2,21 @@
 //   it("pulls a word from the wordBank", function(){
 //     var testGame = new Game("marble", "minute", "beard");
 //     var wordBank = ["marble"]
-//     expect(testGame.wordBank().to.equal("marble");
+//     expect(testGame.wordBank().to.equal("marble"));
 //   });
-
+//
 // });
 
 describe('Player', function(){
 
 });
 
-describe('wordSelector', function(){
-  it('pulls a random word from an array', function(){
-    expect(wordSelector("")).to.equal(wordSelector(""));
+describe('randWord', function(){
+  it('pulls a random word and assigns it to the game', function(){
+    var testGame = new Game("Courtney");
+    // expect(testGame.randWord()).to.equal(true);
+    expect(wordBank.includes(testGame.randWord())).to.equal(true);
+    //console.log(wordBank);
   });
 
   describe("wordSplitter", function(){
@@ -23,7 +26,7 @@ describe('wordSelector', function(){
   });
   describe("guessLetter", function(){
     it("takes input from user and tests it against the array from wordSplitter", function(){
-      expect(guessLetter("l")).to.equal(false);
+      expect(guessLetter("z")).to.equal(false);
     });
   });
   describe('replaceLetters', function(){
