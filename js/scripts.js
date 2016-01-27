@@ -20,10 +20,9 @@ function Player(guess, lost, won){
   this.won = won;
 }
 
-var guessLetter = function(guess){
-  };
 
-Game.prototype.guessedList = function(guess){
+
+Game.prototype.guessLetter = function(guess){
   var puzzleArray = this.puzzleWord.split("")
   if(puzzleArray.includes(guess)){
     return true
@@ -40,10 +39,6 @@ Game.prototype.randWord= function() {
   return randWord;
 };
 
-var wordSplitter = function(str){
-var letterArray = str.split("");
-return letterArray;
-}
 
 var replaceLetters = function(str){
 var letters = /[a-zA-Z]/g;

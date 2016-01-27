@@ -19,14 +19,10 @@ describe('randWord', function(){
     //console.log(wordBank);
   });
 
-  describe("wordSplitter", function(){
-    it('takes the random word from wordSelector and splits it up into an array of one letter strings', function(){
-      expect(wordSplitter("marble")).to.eql(["m", "a", "r", "b", "l", "e"]);
-    });
-  });
   describe("guessLetter", function(){
     it("takes input from user and tests it against the array from wordSplitter", function(){
-      expect(guessLetter("z")).to.equal(false);
+      var testGame = new Game("Michael");
+      expect(testGame.guessLetter("z")).to.equal(false);
     });
   });
   describe('replaceLetters', function(){
