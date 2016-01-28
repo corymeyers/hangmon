@@ -1,12 +1,12 @@
-# To Do List
+# Hang the Man
 
 ## Description
 
-This application is a simple to do list that allows users to cross off tasks when complete.
+This application is a simple game of hang man.
 
 ## Setup
 
-Install To Do List by cloning this repository.
+Install Hang the Man by cloning this repository.
 
 ## Technologies Used
 

@@ -7,11 +7,28 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
   <meta charset="utf-8">
-  <title>To Do List</title>
+  <title>Hang The Man</title>
 </head>
-
 <body>
   <div class="container">
+    <h2>I am Hangman.</h2>
+
+    <div id="hiddenWord">
+    <span class="hiddenWord"></span>
+    </div>
+<form id="userInput" action="index.html" method="post">
+  <label for="guess">Guess a Letter:</label>
+  <input id="guess" type="text" name="name" value="">
+  <button type="submit" name="button">Guess!</button>
+</form>
+
+<div id="imageField">
+   <img id="gallows" src="img/gallows.png">
+
+</div>
+
+
+
   </div>
 </body>
 </html>
